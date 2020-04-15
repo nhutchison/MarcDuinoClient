@@ -85,44 +85,44 @@ sequence_t const panel_all_open_no_close PROGMEM =
 	{20, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_OPN,	_NP,	6,		7},
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
-sequence_t const panel_wave PROGMEM =
+sequence_t const panel_wave PROGMEM = //SE02 WAVE
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
-	{265, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // Sync with master servo sequence.
+	{240, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // Sync with master servo sequence.
 	{30, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
-	{115, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{120, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
 	{30, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_OPN,	_NP,	6,		7},
 	{30, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
-sequence_t const panel_fast_wave PROGMEM=
+sequence_t const panel_fast_wave PROGMEM= //SE03 SMIRK
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
-	{135, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // Sync with master servo sequence.
+	{113, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // Sync with master servo sequence.
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
-	{60, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{68, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_OPN,	_NP,	6,		7}, // All opened forwards.
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_OPN,	_NP,	6,		7}, // Start reverse
-	{75, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7}, //45
+	{62, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7}, //45
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
-sequence_t const panel_open_close_wave PROGMEM=
+sequence_t const panel_open_close_wave PROGMEM= //SE04 WAVE
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
-	{180, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
+	{160, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
 	{100, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_OPN,	_CLS,	_NP,	6,		7},
 	{220, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_OPN,	_OPN,	_NP,	6,		7},
-	{80, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_OPN,	_NP,	6,		7},
+	{100, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_OPN,	_NP,	6,		7},
 	{40, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
-sequence_t const panel_marching_ants PROGMEM =
+sequence_t const panel_marching_ants PROGMEM =  //Used in SE05
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
@@ -161,12 +161,103 @@ sequence_t const panel_marching_ants PROGMEM =
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
 // TODO ... figure this one out!
-sequence_t const panel_dance PROGMEM =
+sequence_t const panel_dance PROGMEM =  //Used in SE07
 {
-	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
+
+
+		//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
 	{20, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
-	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_OPN,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_OPN,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_OPN,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_OPN,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_OPN,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_OPN,	_NP,	6,		7},
+	{45, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7},
+
 };
 sequence_t const panel_init PROGMEM =
 {
@@ -176,32 +267,32 @@ sequence_t const panel_init PROGMEM =
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
 // 6min26sec disco sequence to trigger callback at the right time
-sequence_t const panel_long_disco PROGMEM=
+sequence_t const panel_long_disco PROGMEM=  //SE09
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
-	{135, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
-	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_OPN,	_CLS,	_NP,	6,		7},
-	{60, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
-	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_OPN,	_NP,	6,		7},
+	{113, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // Sync with master servo sequence.
+	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
+	{68, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_OPN,	_NP,	6,		7}, // All opened forwards.
 	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
-	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_OPN,	_NP,	6,		7},
-	{75, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
-	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_OPN,	_CLS,	_NP,	6,		7},
-	{75, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
-	{36000, _NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // 6 minutes
-	{2100, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // 21 seconds
+	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_OPN,	_NP,	6,		7}, // Start reverse
+	{62, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7}, //45
+	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_OPN,	_CLS,	_NP,	6,		7},
+	{15, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},
+	//{36000, _NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // 6 minutes
+	//{2100, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_CLS,	_CLS,	_NP,	6,		7},  // 21 seconds
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
 // Maxstang's sequences
-sequence_t const panel_bye_bye_wave PROGMEM =
+sequence_t const panel_bye_bye_wave PROGMEM = //SE58
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
 	{20, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_CLS,	_CLS,	_NP,	6,		7},
 	{0, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP,	_NP,	_NP,	6,		7}
 };
-sequence_t const panel_wiggle PROGMEM =
+sequence_t const panel_wiggle PROGMEM = //SE16
 {
 	//  -------------------MASTER-------------------------  ----SLAVE------ -----------CONFIG-----------
 	// time	HPFV	HPFH	HPRV	HPRH	HPTV	HPTH	servo12	servo13	speed	first 	last
