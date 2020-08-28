@@ -4,7 +4,7 @@
  * 	Author: Marc Verdiell
  * 	v1.8
  *
- *  v2.0
+ *  v3.4
  *  Author: Neil Hutchison
  *
  * 	See description in implementation file
@@ -194,6 +194,8 @@ void holo2_flash_command(uint8_t value);
 void holo3_flash_command(uint8_t value);
 void all_holo_flash_command(uint8_t value);
 void init_jedi();
+
+uint16_t calc_crc();
 
 // i2c parsing (v1.8)
 void parse_i2c_command(char* command,uint8_t length);
