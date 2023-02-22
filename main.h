@@ -102,6 +102,10 @@
 #define MAGIC_PIN	5
 #endif
 
+//EXT1 Pin Definitions
+#define EXT1_PORT 	PORTC
+#define EXT1_PIN	2
+
 // define holo Lights connection (was servo 10)
 #define HP1_LIGHT_PORT	PORTB	// front
 #define HP1_LIGHT_PIN	2
@@ -136,6 +140,14 @@
 	#endif
 #endif
 
+// EXT1 Control.  Depending on your use you can set the pin to be either high or low
+#ifdef _REVERSEEXT1_
+	#define EXT1_ON digitalWrite(EXT1_PORT, EXT1_PIN, LOW)
+	#define EXT1_OFF digitalWrite(EXT1_PORT, EXT1_PIN, HIGH)
+#else						// positive logic, high is on
+	#define EXT1_ON digitalWrite(EXT1_PORT, EXT1_PIN, HIGH)
+	#define EXT1_OFF digitalWrite(EXT1_PORT, EXT1_PIN, LOW)
+#endif
 
 // Panel command vocabulary
 #define CMD_SEQUENCE 	    "SE"		// launches a sequence
@@ -152,6 +164,7 @@
 	#define CMD_MAGIC_ON		"MO" // 0-off, 99-on, 1 to 98= on during the time in seconds
 	#define CMD_MAGIC_FLICKER	"MF" // flicker for the time in seconds
 #endif
+#define CMD_EXT1_ON			"EO" // 0-off, 99-on, 1-98= on during the time in seconds
 #define CMD_HOLO1_FLICKER 	"F1" // flicker for the time in seconds
 #define CMD_HOLO2_FLICKER 	"F2" // flicker for the time in seconds
 #define CMD_HOLO3_FLICKER 	"F3" // flicker for the time in seconds
@@ -194,6 +207,7 @@ void holo2_flash_command(uint8_t value);
 void holo3_flash_command(uint8_t value);
 void all_holo_flash_command(uint8_t value);
 void init_jedi();
+void ext1_on_command(uint8_t value);
 
 uint16_t calc_crc();
 

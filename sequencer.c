@@ -62,6 +62,14 @@ void seq_loadspeed(speed_t speedarray)
 	}
 }
 
+// set the speed for an individual servo
+void seq_setspeed(uint8_t servo, int16_t speed)
+{
+	if (servo<SERVO_NUM) {
+		servo_speed[servo] = speed;
+	}
+}
+
 void seq_resetspeed()
 {
 	uint8_t i;

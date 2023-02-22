@@ -87,6 +87,7 @@ void seq_init();
 void seq_add_completion_callback(void(*usercallback)());
 void seq_remove_completion_callback();
 void seq_loadspeed(speed_t speedarray);
+void seq_setspeed(uint8_t servo, int16_t speed);
 void seq_resetspeed();
 void seq_loadsequence(int16_t const array[][SERVO_NUM + SEQUENCE_PARAMETERS], uint8_t length);
 void seq_startsequence();
