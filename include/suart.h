@@ -44,6 +44,7 @@
 
 //****** first default port **********
 // Put your Tx pin location here
+// SUART is Slave output
 #define SUART_TX_PIN	0
 #define SUART_TX_PORT 	PORTC
 
@@ -52,10 +53,13 @@ void suart_init(long baudrate);
 void suart_putc(uint8_t b);
 void suart_puts(char* string);
 void suart_puts_p(const char *progmem_s );
+void suart_tunedDelay(uint16_t delay);
+void suart_tx_pin_write(uint8_t pin_state);
 
 //*********second optional port ******
 #ifdef SUART_DUAL_PORT
 
+//Suart 2 is MP3/Teeces Out
 	#ifdef _MARCDUINOV2_ // Marcduino V2 board has PC1 as SUART2
 		#define SUART2_TX_PIN	1
 		#define SUART2_TX_PORT	PORTC
@@ -66,9 +70,12 @@ void suart_puts_p(const char *progmem_s );
 
 #endif
 
+//PC2 == AUX1 == Suart3???
+
 void suart2_init(long baudrate);
 void suart2_putc(uint8_t b);
 void suart2_puts(char* string);
 void suart2_puts_p(const char *progmem_s );
+void suart2_tx_pin_write(uint8_t pin_state);
 
 #endif

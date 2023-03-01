@@ -370,7 +370,7 @@ int main(void) {
 	// Get the current CRC from the EEPROM
 	uint16_t storedCRC = eeprom_read_word((uint16_t*)stored_crc_addr);
 
-	char string[30];
+	char string[128];
 	sprintf(string, "Calc CRC: %X StoredCRC: %X \r\n", calculatedCRC, storedCRC);
 	serial_puts(string);
 
